@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { TiWeatherDownpour } from "react-icons/ti";
+import { MdOutlineFlight } from "react-icons/md";
+import { RiCalendarEventFill } from "react-icons/ri";
+import { MdOutlineSettings } from "react-icons/md";
 import "./App.css";
 
 const App = () => {
@@ -72,15 +76,9 @@ const App = () => {
               Full Life
             </h1>
             <div className="flex items-center space-x-4">
-              <button className="bg-orange-500 text-white px-6 py-3 rounded-full font-medium hover:bg-orange-600 !rounded-button whitespace-nowrap cursor-pointer">
+              <button className="bg-red-600 text-white px-6 py-3 rounded-full font-medium hover:bg-orange-600 !rounded-button whitespace-nowrap cursor-pointer">
                 Find Out More
-              </button>
-              <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md cursor-pointer">
-                  <i className="fas fa-play text-red-600"></i>
-                </div>
-                <span className="text-gray-700">Play Demo</span>
-              </div>
+               </button>
             </div>
           </div>
           <div className="md:w-1/2 relative">
@@ -106,7 +104,7 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-globe text-blue-500 text-2xl"></i>
+                <TiWeatherDownpour className="text-blue-500 text-2xl" />
               </div>
               <h3 className="font-semibold text-lg mb-2">WEATHER FORECAST</h3>
               <p className="text-gray-600 text-sm">
@@ -116,7 +114,7 @@ const App = () => {
 
             <div className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-hotel text-orange-500 text-2xl"></i>
+                <MdOutlineFlight className="text-red-600 text-2xl"/>
               </div>
               <h3 className="font-semibold text-lg mb-2">BEST FLIGHT</h3>
               <p className="text-gray-600 text-sm">
@@ -127,7 +125,7 @@ const App = () => {
 
             <div className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-map-marked-alt text-yellow-500 text-2xl"></i>
+                <RiCalendarEventFill className="fas fa-map-marked-alt text-yellow-500 text-2xl"/>
               </div>
               <h3 className="font-semibold text-lg mb-2">LOCAL EVENTS</h3>
               <p className="text-gray-600 text-sm">
@@ -137,7 +135,7 @@ const App = () => {
 
             <div className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-concierge-bell text-teal-500 text-2xl"></i>
+                <MdOutlineSettings className="fas fa-concierge-bell text-teal-500 text-2xl"/>
               </div>
               <h3 className="font-semibold text-lg mb-2">CUSTOMIZATION</h3>
               <p className="text-gray-600 text-sm">
@@ -169,7 +167,7 @@ const App = () => {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold">Rome, Italy</h3>
-                  <span className="text-orange-500 font-semibold">$5,89k</span>
+                  <span className="text-red-600 font-semibold">$5,89k</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <i className="fas fa-plane-departure mr-2"></i>
@@ -189,7 +187,7 @@ const App = () => {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold">London, UK</h3>
-                  <span className="text-orange-500 font-semibold">$3.2k</span>
+                  <span className="text-red-600 font-semibold">$3.2k</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <i className="fas fa-plane-departure mr-2"></i>
@@ -209,7 +207,7 @@ const App = () => {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold">Paris, France</h3>
-                  <span className="text-orange-500 font-semibold">$15k</span>
+                  <span className="text-red-600 font-semibold">$15k</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <i className="fas fa-plane-departure mr-2"></i>
